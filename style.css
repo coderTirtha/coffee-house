@@ -28,8 +28,8 @@ nav ul li {
 nav ul li:hover {
     border-bottom: 4px solid black;
 }
-nav ul li img {
-    width: 80px;
+nav ul img {
+    width: 90px;
 }
 .order-btn {
     background-color: black;
