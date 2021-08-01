@@ -140,3 +140,38 @@ nav ul img {
     margin: 10px 0;
     text-align: center;
 }
+
+.contact-section {
+    margin: 50px 10%;
+    text-align: center;
+}
+
+.contact-content {
+    background: linear-gradient(#00000056, #0000009c), url("images/menu-section/hot-coffee.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-content h1 {
+    font-size: 28px;
+    padding: 20px;
+}
+
+.contact-content input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    background-color: black;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 7px;
+}
