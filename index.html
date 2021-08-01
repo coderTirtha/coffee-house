@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f9c9f5cd0c.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,17 +21,41 @@
         <nav>
             <ul>
                 <ul>
-                    <img src="images/logo.png" alt="">
+                    <a href="">
+                        <img src="images/logo.png" alt="">
+                    </a>
                 </ul>
                 <ul class="menu-items">
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>Menu</li></a>
-                    <a href=""><li>Contact</li></a>
-                    <a href=""><li>Rate Us</li></a>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>Menu</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                    <a href="">
+                        <li>Rate Us</li>
+                    </a>
                     <button class="order-btn">Give an order</button>
                 </ul>
             </ul>
         </nav>
+
+        <section class="restaurant-banner">
+            <div class="banner-text">
+                <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
+                    <h1>Welcome to COFFEE-HOUSE</h1>
+                    <h3>We have various types of coffee recipie.</h3>
+                    <p>We serve the best coffee ever in Chittagong. To give an order, tap the button below and choose what you want to order from us.</p>
+                    <button class="banner-btn">Order Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-image" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                <img src="images/banner.png" alt="">
+            </div>
+        </section>
     </header>
 
     <main>
@@ -42,6 +67,10 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
