@@ -96,3 +96,47 @@ nav ul img {
     background-color: #505050;
     font-size: 18px;
 }
+
+.menu-section {
+    margin: 100px 7%;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 35px;
+    font-weight: 1000;
+    margin: 30px;
+}
+
+.coffee-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.coffee-recipe {
+    text-align: center;
+}
+
+.coffee-recipe img {
+    max-width: 100%;
+}
+
+.coffee-recipe h1 {
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.coffee-recipe h4 {
+    font-weight: 1000;
+}
+
+.coffee-recipe button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-align: center;
+}
