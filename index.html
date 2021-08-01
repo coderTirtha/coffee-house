@@ -24,21 +24,33 @@
                     <a href="">
                         <img src="images/logo.png" alt="">
                     </a>
+                    <li class="menu-bars" onclick="clickMenu()"><i class="fas fa-bars"></i></li>
                 </ul>
                 <ul class="menu-items">
+                    <li id="cross-btn" onclick="closeMenu()"><i class="fas fa-times"></i></li>
                     <a href="">
                         <li>Home</li>
                     </a>
-                    <a href="">
+                    <a href="#scroll-menu">
                         <li>Menu</li>
                     </a>
-                    <a href="">
+                    <a href="#scroll-contact">
                         <li>Contact</li>
                     </a>
-                    <a href="">
+                    <a href="#scroll-rating">
                         <li>Rate Us</li>
                     </a>
                     <button class="order-btn">Give an order</button>
+                </ul>
+
+                <ul class="icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <i class="fas fa-cog" onclick="settings()"></i></a>
+                    <ul class="hide-menu">
+                        <li>Dark Theme</li>
+                        <li>Light Theme</li>
+                    </ul>
                 </ul>
             </ul>
         </nav>
@@ -59,7 +71,7 @@
     </header>
 
     <main>
-        <section class="menu-section">
+        <section class="menu-section" id="scroll-menu">
             <h1 class="section-heading">Our Coffee Recipe</h1>
             <div class="coffee-menu">
                 <div class="coffee-recipe" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
@@ -107,14 +119,32 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" id="scroll-contact">
             <h1 class="section-heading">
                 Contact Us
             </h1>
             <div class="contact-content" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
-                <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">Contact with us on E-mail!!!</h1>
+                <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">Contact with us on E-mail!!!
+                </h1>
                 <div data-aos="fade-left" data-aos-delay="550" data-aos-duration="1200">
                     <input type="text" placeholder="Type your messege here">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="rate-section" id="scroll-rating">
+            <h1 class="section-heading">
+                Rate Us
+            </h1>
+            <div class="rate-content" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">
+                <i class="far fa-star" onclick="ratings()" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200"></i>
+                <i class="far fa-star" id="star1" onclick="ratings1()" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200"></i>
+                <i class="far fa-star" id="star2" onclick="ratings2()" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200"></i>
+                <i class="far fa-star" id="star3" onclick="ratings3()" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200"></i>
+                <i class="far fa-star" id="star4" onclick="ratings4()" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200"></i>
+                <div class="review-part" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
+                    <input type="text" placeholder="Write your review here">
                     <button>Submit</button>
                 </div>
             </div>

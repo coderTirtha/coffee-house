@@ -24,19 +24,58 @@ nav ul a {
     color: black;
 }
 
-nav ul li {
+.menu-items li {
     margin-right: 20px;
     font-size: 17px;
     padding: 5px 10px;
     transition: .1s linear;
 }
 
-nav ul li:hover {
+.menu-items li:hover {
     border-bottom: 4px solid black;
+}
+
+.menu-bars {
+    display: none;
+    font-size: 25px;
+}
+
+#cross-btn {
+    display: none;
 }
 
 nav ul img {
     width: 90px;
+}
+
+.icons {
+    font-size: 30px;
+}
+
+.icons i {
+    margin-right: 20px;
+}
+
+.hide-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+.hide-menu li {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide-menu li:hover {
+    background-color: gainsboro;
+    color: black;
 }
 
 .order-btn {
@@ -174,4 +213,50 @@ nav ul img {
     padding: 10px 17px;
     border: none;
     border-radius: 7px;
+}
+
+.rate-section {
+    text-align: center;
+    margin: 30px 18%;
+}
+
+.rate-content {
+    background: linear-gradient(#0000008a, #000000b9), url("images/rate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.rate-content i {
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.review-part input {
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.review-part button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 790px) {
+    .menu-items {
+        display: none;
+    }
+    .menu-bars {
+        display: block;
+    }
 }
