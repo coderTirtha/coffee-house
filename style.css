@@ -31,8 +31,17 @@ nav ul a {
     transition: .1s linear;
 }
 
-.menu-items li:hover {
-    border-bottom: 4px solid black;
+.menu-items li:hover,
+.hidden-menu li:hover {
+    border-bottom: 4px solid rgb(73, 73, 73);
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.hidden-menu li {
+    margin: 10px;
 }
 
 .menu-bars {
@@ -59,7 +68,7 @@ nav ul img {
 .hide-menu {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 30px;
 }
 
@@ -76,6 +85,12 @@ nav ul img {
 .hide-menu li:hover {
     background-color: gainsboro;
     color: black;
+}
+
+.hide-menu li#close-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
 }
 
 .order-btn {
@@ -114,6 +129,12 @@ nav ul img {
 
 .banner-text h3 {
     color: #ff8800;
+}
+
+.banner-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-image img {
@@ -221,7 +242,7 @@ nav ul img {
 }
 
 .rate-content {
-    background: linear-gradient(#0000008a, #000000b9), url("images/rate.png");
+    background: linear-gradient(#000000cb, #000000de), url("images/rate.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,11 +273,127 @@ nav ul img {
     font-size: 18px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 @media screen and (max-width: 790px) {
     .menu-items {
         display: none;
     }
     .menu-bars {
         display: block;
+    }
+    .restaurant-banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coffee-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-content button {
+        margin-top: 10px;
+    }
+    .rate-content i {
+        font-size: 25px;
+        padding: 15px;
+    }
+    .rate-section {
+        margin: 30px 8%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .menu-items {
+        display: none;
+    }
+    .menu-bars {
+        display: block;
+    }
+    .restaurant-banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coffee-menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-section {
+        margin: 50px 5%;
+    }
+    .contact-content {
+        padding: 50px;
+    }
+    .contact-content button {
+        margin-top: 10px;
+    }
+    .rate-content i {
+        font-size: 20px;
+        padding: 11px;
+    }
+    .rate-section {
+        margin: 30px 8%;
+    }
+    .rate-content {
+        padding: 30px;
+    }
+    .review-part input {
+        font-size: 15px;
+    }
+    .review-part button {
+        font-size: 15px;
+    }
+    .review-part button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        margin: 0 5%;
+        text-align: center;
+    }
+    .contact-content {
+        padding: 45px;
+    }
+    .rate-content {
+        padding: 25px;
+    }
+    .rate-content i {
+        font-size: 18px;
+        padding: 9px;
+    }
+    .rate-section {
+        margin: 30px 5%;
+    }
+    .review-part button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    body {
+        margin: 0 2%;
     }
 }

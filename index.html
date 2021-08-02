@@ -19,15 +19,15 @@
 <body>
     <header>
         <nav>
+
             <ul>
                 <ul>
                     <a href="">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo.png" alt="" id="brand-logo">
                     </a>
                     <li class="menu-bars" onclick="clickMenu()"><i class="fas fa-bars"></i></li>
                 </ul>
                 <ul class="menu-items">
-                    <li id="cross-btn" onclick="closeMenu()"><i class="fas fa-times"></i></li>
                     <a href="">
                         <li>Home</li>
                     </a>
@@ -44,14 +44,31 @@
                 </ul>
 
                 <ul class="icons">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     <i class="fas fa-cog" onclick="settings()"></i></a>
                     <ul class="hide-menu">
-                        <li>Dark Theme</li>
-                        <li>Light Theme</li>
+                        <li id="close-btn" onclick="closeSettings()"><i class="fas fa-times"></i></li>
+                        <li class="dark-mode">Dark Theme</li>
+                        <li class="light-mode">Light Theme</li>
                     </ul>
                 </ul>
+            </ul>
+            <ul class="hidden-menu">
+                <li id="cross-btn" onclick="closeMenu()"><i class="fas fa-times"></i></li>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="#scroll-menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#scroll-contact">
+                    <li>Contact</li>
+                </a>
+                <a href="#scroll-rating">
+                    <li>Rate Us</li>
+                </a>
+                <button class="order-btn">Give an order</button>
             </ul>
         </nav>
 
@@ -152,7 +169,25 @@
     </main>
 
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-logo"><img src="images/logo(dark-mode).png" alt=""></div>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Contact</li>
+                <li>Rate Us</li>
+                <li>Terms and Conditions</li>
+            </ul>
+            <ul>
+                <li>Service</li>
+                <li>Medium</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <div class="copyright-text">
+            <h5>© Copyright 2021 || All rights reserved || COFFEE-HOUSE</h5>
+        </div>
     </footer>
 
     <script src="index.js"></script>
