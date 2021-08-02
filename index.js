@@ -56,7 +56,7 @@ document.querySelector(".dark-mode").addEventListener("click", function() {
     document.querySelector(".hide-menu").style.display = "none";
     document.querySelector(".fa-cog").style.display = "block";
     document.querySelector("#close-btn").style.display = "none";
-    selectBody.style.backgroundColor = "#060c21";
+    selectBody.style.backgroundColor = "rgb(33 6 6) ";
     selectBody.style.color = "white";
     document.querySelector("#brand-logo").src = "images/logo(dark-mode).png";
     document.querySelector(".hide-menu li#close-btn").style.color = "white";
