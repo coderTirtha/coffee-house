@@ -108,9 +108,14 @@ function orderBtn() {
     document.querySelector(".your-orders").style.display = "block";
     count += 1;
     document.getElementById("click").innerHTML = count;
+
+    if (count > 1) {
+        document.getElementById("plural").innerHTML = "items";
+    }
 }
 
 function closeOrderMenu() {
     document.querySelector(".your-orders").style.display = "none";
     count = 0;
+    document.getElementById("plural").innerHTML = "item";
 }
