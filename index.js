@@ -1,7 +1,7 @@
 var menu = document.querySelector(".hidden-menu");
 var bars = document.querySelector(".menu-bars");
 var close = document.querySelector("#cross-btn");
-var rate = document.querySelector(".far");
+var rate = document.querySelector("#star0");
 var rate1 = document.querySelector("#star1");
 var rate2 = document.querySelector("#star2");
 var rate3 = document.querySelector("#star3");
@@ -53,6 +53,9 @@ function closeSettings() {
 }
 
 document.querySelector(".dark-mode").addEventListener("click", function() {
+    document.querySelector(".hide-menu").style.display = "none";
+    document.querySelector(".fa-cog").style.display = "block";
+    document.querySelector("#close-btn").style.display = "none";
     selectBody.style.backgroundColor = "#060c21";
     selectBody.style.color = "white";
     document.querySelector("#brand-logo").src = "images/logo(dark-mode).png";
@@ -79,6 +82,9 @@ document.querySelector(".dark-mode").addEventListener("click", function() {
 });
 
 document.querySelector(".light-mode").addEventListener("click", function() {
+    document.querySelector(".hide-menu").style.display = "none";
+    document.querySelector(".fa-cog").style.display = "block";
+    document.querySelector("#close-btn").style.display = "none";
     selectBody.style.backgroundColor = "white";
     selectBody.style.color = "black";
     document.querySelector("#brand-logo").src = "images/logo.png";
@@ -95,3 +101,16 @@ document.querySelector(".light-mode").addEventListener("click", function() {
     document.querySelectorAll(".hidden-menu li")[3].style.color = "black";
     document.querySelectorAll(".hidden-menu li")[4].style.color = "black";
 });
+
+var count = 0;
+
+function orderBtn() {
+    document.querySelector(".your-orders").style.display = "block";
+    count += 1;
+    document.getElementById("click").innerHTML = count;
+}
+
+function closeOrderMenu() {
+    document.querySelector(".your-orders").style.display = "none";
+    count = 0;
+}
