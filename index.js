@@ -22,22 +22,37 @@ function closeMenu() {
 
 function ratings() {
     rate.classList.add("fas");
+    document.getElementById("rate-submission").style.display = "block";
+    document.getElementById("rate-submission").innerHTML = "Submit your ratings.";
+    document.getElementById("rate-submission").style.textDecoration = "underline";
 }
 
 function ratings1() {
     rate1.classList.add("fas");
+    document.getElementById("rate-submission").style.display = "block";
+    document.getElementById("rate-submission").innerHTML = "Submit your ratings.";
+    document.getElementById("rate-submission").style.textDecoration = "underline";
 }
 
 function ratings2() {
     rate2.classList.add("fas");
+    document.getElementById("rate-submission").style.display = "block";
+    document.getElementById("rate-submission").innerHTML = "Submit your ratings.";
+    document.getElementById("rate-submission").style.textDecoration = "underline";
 }
 
 function ratings3() {
     rate3.classList.add("fas");
+    document.getElementById("rate-submission").style.display = "block";
+    document.getElementById("rate-submission").innerHTML = "Submit your ratings.";
+    document.getElementById("rate-submission").style.textDecoration = "underline";
 }
 
 function ratings4() {
     rate4.classList.add("fas");
+    document.getElementById("rate-submission").style.display = "block";
+    document.getElementById("rate-submission").innerHTML = "Submit your ratings.";
+    document.getElementById("rate-submission").style.textDecoration = "underline";
 }
 
 function settings() {
@@ -119,3 +134,14 @@ function closeOrderMenu() {
     count = 0;
     document.getElementById("plural").innerHTML = "item";
 }
+
+document.getElementById("rate-submission").addEventListener("click", function() {
+    rate.classList.remove("fas");
+    rate1.classList.remove("fas");
+    rate2.classList.remove("fas");
+    rate3.classList.remove("fas");
+    rate4.classList.remove("fas");
+    document.getElementById("rate-submission").innerHTML = "Your ratings have been submitted. Thanks for your opinion! You can write a review here to improve us.";
+    document.getElementById("rate-submission").style.textDecoration = "none";
+    document.getElementById("rate-submission").style.cursor = "pointer";
+});
